@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable
+            name="captureViewModel"
+            type="com.chowis.android_sample.viewModel.CaptureViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_background_color"
+        tools:context=".view.CaptureActivity">
+
+        <include
+            android:id="@+id/activity_video_header"
+            layout="@layout/activity_video_header"
+            app:activityVideoTitle="@{@string/skin_group_string}" />
+
+        <RelativeLayout
+            android:id="@+id/capture_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="102dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_video_header">
+
+            <com.chowis.sdk.newcnd.CNDPlayer
+                android:id="@+id/capture_cnd_player"
+                android:layout_width="466dp"
+                android:layout_height="350dp"
+                android:background="@drawable/cnd_player_background" />
+
+            <ImageView
+                android:id="@+id/capture_image"
+                android:layout_width="466dp"
+                android:layout_height="350dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/capture_close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/capture_image"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="9dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/close_button_img"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/capture_button"
+            android:layout_width="287dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="85dp"
+            android:backgroundTint="@color/button_mint_color"
+            android:text="@string/capture_string"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/capture_relative"
+            app:layout_constraintStart_toStartOf="@+id/capture_relative"
+            app:layout_constraintTop_toBottomOf="@+id/capture_relative" />
+
+        <Button
+            android:id="@+id/capture_done_button"
+            android:layout_width="287dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/button_gray_color"
+            android:text="@string/done_string"
+            android:textAllCaps="true"
+            android:textColor="#5A5A5A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/capture_relative"
+            app:layout_constraintStart_toStartOf="@+id/capture_relative"
+            app:layout_constraintTop_toBottomOf="@+id/capture_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

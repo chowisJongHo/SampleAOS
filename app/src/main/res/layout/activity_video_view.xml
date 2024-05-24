@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="videoViewModel"
+            type="com.chowis.android_sample.viewModel.VideoViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/video_view_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_background_color"
+        tools:context=".view.VideoViewActivity">
+
+        <include
+            android:id="@+id/activity_video_header"
+            layout="@layout/activity_video_header"
+            app:activityVideoTitle="@{@string/analysis}" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/video_moisture_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/video_button_select"
+            android:text="@string/moisture_string"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_video_header" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/video_spot_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/video_button_select"
+            android:text="@string/spot_string"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_moisture_button" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/video_pores_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/video_button_select"
+            android:text="@string/pores_string"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_spot_button" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/video_impurities_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/video_button_select"
+            android:text="@string/impurities_string"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_pores_button" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/video_wrinkle_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/video_button_select"
+            android:text="@string/wrinkle_string"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_impurities_button" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/video_keratin_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/video_button_select"
+            android:text="@string/keratin_string"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_wrinkle_button" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/video_sensitivity_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/video_button_select"
+            android:text="@string/sensitivity_string"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_keratin_button" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/video_sebum_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/video_button_select"
+            android:text="@string/sebum_string"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_sensitivity_button" />
+
+        <RelativeLayout
+            android:id="@+id/video_relative"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/cnd_player_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_video_header">
+
+            <com.chowis.sdk.newcnd.CNDPlayer
+                android:id="@+id/video_cnd_player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/video_zone_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/video_moisture_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/moisture_back_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/video_t_zone_button"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="65dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/moisture_default_img"
+                    app:layout_constraintEnd_toEndOf="@+id/video_moisture_background"
+                    app:layout_constraintStart_toStartOf="@+id/video_moisture_background"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/video_u_zone_button"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="57dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/moisture_default_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/video_moisture_background"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/video_t_zone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/video_moisture_background"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/video_u_zone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/video_moisture_background"
+                    app:layout_constraintTop_toBottomOf="@+id/video_t_zone_text" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/video_capture_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/video_capture_close_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="9dp"
+                android:src="@drawable/close_button_img"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/video_analyze_linear"
+            android:layout_width="287dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/analyze_button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/video_relative"
+            app:layout_constraintStart_toStartOf="@+id/video_relative"
+            app:layout_constraintTop_toBottomOf="@+id/video_relative">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/video_analyze_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:text="@string/analysis"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/video_result_button"
+            android:layout_width="287dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/button_gray_color"
+            android:text="@string/result_string"
+            android:textAllCaps="true"
+            android:textColor="#5A5A5A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/video_relative"
+            app:layout_constraintStart_toStartOf="@+id/video_relative"
+            app:layout_constraintTop_toBottomOf="@+id/video_analyze_linear" />
+
+        <TextView
+            android:id="@+id/video_skin_select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/video_relative"
+            app:layout_constraintTop_toBottomOf="@+id/video_result_button" />
+
+        <TextView
+            android:id="@+id/video_type_select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/video_relative"
+            app:layout_constraintTop_toBottomOf="@+id/video_skin_select_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

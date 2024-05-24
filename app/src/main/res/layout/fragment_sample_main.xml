@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.SampleMainFragment">
+
+    <TextView
+        android:id="@+id/db_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:text="Sample DB"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/db_select_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/db_title_text" />
+
+    <Button
+        android:id="@+id/db_spot_button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="155dp"
+        android:backgroundTint="@color/button_mint_color"
+        android:text="@string/spot_string"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/db_select_text" />
+
+    <Button
+        android:id="@+id/db_pores_button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="155dp"
+        android:backgroundTint="@color/button_mint_color"
+        android:text="@string/pores_string"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/db_spot_button" />
+
+    <Button
+        android:id="@+id/db_wrinkle_button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="155dp"
+        android:backgroundTint="@color/button_mint_color"
+        android:text="@string/wrinkle_string"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/db_pores_button" />
+
+    <Button
+        android:id="@+id/db_impurities_button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="155dp"
+        android:backgroundTint="@color/button_gray_color"
+        android:text="@string/impurities_string"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/db_wrinkle_button" />
+
+    <Button
+        android:id="@+id/db_keratin_button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="155dp"
+        android:backgroundTint="@color/button_gray_color"
+        android:text="@string/keratin_string"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/db_impurities_button" />
+
+    <Button
+        android:id="@+id/db_sensitivity_button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="155dp"
+        android:backgroundTint="@color/button_gray_color"
+        android:text="@string/sensitivity_string"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/db_keratin_button" />
+
+    <Button
+        android:id="@+id/db_sebum_button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="155dp"
+        android:backgroundTint="@color/button_gray_color"
+        android:text="@string/sebum_string"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/db_sensitivity_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

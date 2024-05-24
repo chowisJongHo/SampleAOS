@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="dbViewModel"
+            type="com.chowis.android_sample.viewModel.SampleDBViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#242424"
+        tools:context=".view.SampleDBActivity">
+
+        <ImageButton
+            android:id="@+id/db_language_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="26dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/globe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="37dp"
+            android:text="@string/app_version"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/db_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:text="Sample DB"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/db_select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/db_title_text" />
+
+        <Button
+            android:id="@+id/db_spot_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="155dp"
+            android:backgroundTint="@color/button_mint_color"
+            android:text="@string/spot_string"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/db_select_text" />
+
+        <Button
+            android:id="@+id/db_pores_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="155dp"
+            android:backgroundTint="@color/button_mint_color"
+            android:text="@string/pores_string"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/db_spot_button" />
+
+        <Button
+            android:id="@+id/db_wrinkle_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="155dp"
+            android:backgroundTint="@color/button_mint_color"
+            android:text="@string/wrinkle_string"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/db_pores_button" />
+
+        <Button
+            android:id="@+id/db_impurities_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="155dp"
+            android:backgroundTint="@color/button_gray_color"
+            android:text="@string/impurities_string"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/db_wrinkle_button" />
+
+        <Button
+            android:id="@+id/db_keratin_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="155dp"
+            android:backgroundTint="@color/button_gray_color"
+            android:text="@string/keratin_string"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/db_impurities_button" />
+
+        <Button
+            android:id="@+id/db_sensitivity_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="155dp"
+            android:backgroundTint="@color/button_gray_color"
+            android:text="@string/sensitivity_string"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/db_keratin_button" />
+
+        <Button
+            android:id="@+id/db_sebum_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="155dp"
+            android:backgroundTint="@color/button_gray_color"
+            android:text="@string/sebum_string"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/db_sensitivity_button" />
+
+        <LinearLayout
+            android:id="@+id/db_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="204dp"
+            android:layout_marginEnd="204dp"
+            android:layout_marginBottom="47dp"
+            android:background="@drawable/db_back_button_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="@string/back_button_string"
+                android:textColor="@color/button_mint_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <color name="activity_background_color">#242424</color>
+
+    <color name="button_mint_color">#5DD3B7</color>
+    <color name="button_gray_color">#A4A4A4</color>
+    
+    <color name="skin_group_background1">#F1DBCC</color>
+    <color name="skin_group_background2">#E5C9B1</color>
+    <color name="skin_group_background3">#D1B593</color>
+    <color name="skin_group_background4">#C09D85</color>
+    <color name="skin_group_background5">#6B3E24</color>
+    <color name="skin_group_background6">#3F2B20</color>
+</resources>

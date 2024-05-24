@@ -1,0 +1,197 @@
+<resources>
+    <string name="app_name">Android-Sample</string>
+    <string name="app_version">V1.1.4</string>
+
+    <!-- Main -->
+    <string name="device_registration">DEVICE REGISTRATION</string>
+
+    <string name="select_connection_mode_title">Select Connection mode</string>
+
+    <string name="direct_mode">DIRECT MODE</string>
+    <string name="router_mode">ROUTER MODE</string>
+
+    <string name="analysis">Analysis</string>
+
+    <string name="function_button_string">FUNCTION</string>
+    <string name="sample_button_string">SAMPLE DB</string>
+
+    <string name="otp_not_new_cnd">This optic number is not new CND!</string>
+
+    <string name="cid_check_string">Please check the label</string>
+
+    <!-- LanguageDialog -->
+    <string-array name="language">
+        <item>한국어</item>
+        <item>ENGLISH</item>
+    </string-array>
+
+    <!-- DeviceDialog -->
+    <string name="device_dialog_title">Device Registration</string>
+    <string name="device_option_title">Enter Option Number</string>
+
+    <string name="configuration_button_string">configuration file</string>
+
+    <string name="submit_button_string">SUBMIT</string>
+
+    <string name="otp_input_correct">Please input optic number correctly</string>
+
+    <!-- SkinGroupDialog -->
+    <string name="skin_group_string">Skin Group</string>
+    <string name="skin_content_title">Please select your Skin Group</string>
+
+    <!-- DBSampleActivity -->
+    <string name="db_title_string">Sample DB</string>
+
+    <string name="spot_string">Spot/Pigmentation</string>
+    <string name="pores_string">Pores</string>
+    <string name="wrinkle_string">Wrinkle</string>
+    <string name="impurities_string">Impurities</string>
+    <string name="keratin_string">Keratin</string>
+    <string name="sensitivity_string">Sensitivity</string>
+    <string name="sebum_string">Sebum</string>
+
+    <string name="back_button_string">BACK</string>
+
+    <!-- FunctionActivity -->
+    <string name="function_title_text">FUNCTION</string>
+    <string name="function_firmware_string">FIRMWARE</string>
+    <string name="function_wifi_title">WIFI Frequency</string>
+    <string name="function_wifi_string" formatted="false">WIFI Frequency (%s)</string>
+    <string name="function_battery_string">Battery Level Check</string>
+
+    <!-- FirmwareActivity -->
+    <string name="firmware_version_string">Current Version</string>
+    <string name="firmware_update_string">Firmware Update</string>
+
+    <!-- FirmwareDialog -->
+    <string name="firmware_update_content_string" formatted="false">New Version available %s \ninstall?</string>
+    <string name="firmware_update_not_need_string">No new firmware available</string>
+    <string name="firmware_update_button_string">UPDATE</string>
+    <string name="firmware_dismiss_button_string">DISMISS</string>
+
+    <!-- BatteryDialog -->
+    <string name="battery_content_string" formatted="false">The device\'s battery level is at %s</string>
+
+    <!-- WifiBottomSheetDialogFragment -->
+    <string name="wifi_state_string" formatted="false">%s</string>
+
+    <!-- SelectSkinGroupDialog -->
+    <string name="select_dialog_string">Please select how to capture your Skin Group.</string>
+
+    <!-- CaptureDialog -->
+    <string name="image_capture_string">image capture (default)</string>
+    <string name="manual_input_string">manual input</string>
+
+    <!-- CaptureView -->
+    <string name="capture_string">capture</string>
+    <string name="done_string">done</string>
+    <string name="cnd_not_playing_string">It is not playing</string>
+
+    <!-- VideoView -->
+    <string name="moisture_string">moisture</string>
+    <string name="result_string">result</string>
+
+    <!-- MeasurementDialog -->
+    <string name="measurement_moisture">Moisture Measurement</string>
+    <string name="measurement_moisture_content_string">\u2022 Locate moisture sensor on the upper part of the camera\n&#160;&#160;Clean and wipe moisture sensor before using\n\u2022 Select forehead icon (T zone) on screen image; lift camera\n&#160;&#160;and direct moisture sensor onto the forehead then\n&#160;&#160;click capture button\n\u2022 Do the same for the cheek to measure</string>
+    <string name="measurement_sebum">Sebum Measurement</string>
+    <string name="measurement_sebum_content_string">\u2022 Select T zone (forehead) or U zone (cheek) on the \n&#160;&#160;image screen\n\u2022 Take one sebum paper and find T and U pink labels\n\u2022 Dab the pink paper areas onto the forehead and cheek\n&#160;&#160;for 3 seconds then capture the images</string>
+    <string name="measurement_guide_string">*Please make sure that only the pink area of the paper is captured on camera\n*If you opt not to use the accessory, you can directly take images of the skin on\nthe forehead and cheek areas.</string>
+    <string name="measurement_proceed_string">Proceed</string>
+
+    <!-- QnA -->
+    <string name="oily_title">Oily vs Dry</string>
+
+    <string name="oily_question_1">With only makeup base and foundation applied on the\nface, how does do you look and feel after 2&#8211;3 hours\nwithout applying powder?</string>
+    <string name="oily_1_1_answer">Flaky</string>
+    <string name="oily_1_2_answer">Smooth</string>
+    <string name="oily_1_3_answer">Oily</string>
+    <string name="oily_1_4_answer">Greasy and slimy</string>
+    <string name="oily_1_5_answer">I do not use makeup base or foundation</string>
+
+    <string name="oily_question_2">If you look closely at your face, how dilated are your\npores? ( compare to a size of a pin tip or bigger)</string>
+    <string name="oily_2_1_answer">I can see a few dilated pores</string>
+    <string name="oily_2_2_answer">Slightly more on the T-zone (forehead and nose)</string>
+    <string name="oily_2_3_answer">Many in different areas</string>
+    <string name="oily_2_4_answer">There are so many that it bothers me a lot</string>
+
+    <string name="oily_question_3">Please choose the one that best describes your facial\nskin condition?</string>
+    <string name="oily_3_1_answer">It is always dry, feel tight, and dead skin cells are always\npresent</string>
+    <string name="oily_3_2_answer">The skin is soft, the pores are small and the face looks good</string>
+    <string name="oily_3_3_answer">The forehead and nose area (T-zone) is generally shiny,\nbut the cheeks and chin area (U-zone) are generally dry</string>
+    <string name="oily_3_4_answer">It is very oily which leads to a lot of skin issues</string>
+
+    <string name="oily_question_4">Do you have dark brown or black spots caused by\nacne and ingrown hair?</string>
+    <string name="oily_4_1_answer">Not at all</string>
+    <string name="oily_4_2_answer">Rarely</string>
+    <string name="oily_4_3_answer">Often</string>
+    <string name="oily_4_4_answer">Always</string>
+
+    <string name="pigmented_title">Pigmented vs Nonpigmented</string>
+
+    <string name="pigmented_question_1">Does prolonged exposure to sunlight worsen the dark/nspots or pigmentation on your face?</string>
+    <string name="pigmented_1_1_answer">I do not have dark spots or pigmentation at all</string>
+    <string name="pigmented_1_2_answer">I do not know</string>
+    <string name="pigmented_1_3_answer">Slightly worse</string>
+    <string name="pigmented_1_4_answer">It gets a lot worse</string>
+    <string name="pigmented_1_5_answer">I apply sunscreen on my face every day and avoid sunlight</string>
+    <string name="pigmented_1_info">(If you continue to use sunscreen because you are afraid of dark\nspots or freckles, answer “④”).</string>
+
+    <string name="pigmented_question_2">What happens when you are exposed to sunlight/nfor several days?</string>
+    <string name="pigmented_2_1_answer">Blisters are formed from sunburn, but the color of the skin\ndoes not change</string>
+    <string name="pigmented_2_2_answer">The skin color has darkened slightly</string>
+    <string name="pigmented_2_3_answer">My skin has gotten a lot darker</string>
+    <string name="pigmented_2_4_answer">It\'s hard to tell if it\'s darker because the original skin\ncolor is black</string>
+    <string name="pigmented_2_5_answer">I don\'t know. (Don\'t assume "never been exposed to sunlight")</string>
+    <string name="pigmented_2_info">(If you choose option ⑤, consider your childhood and vacation experiences)</string>
+
+    <string name="wrinkles_title">Wrinkles vs Tight</string>
+
+    <string name="wrinkles_question_1">Looking at the mirror, do you see any face wrinkles?</string>
+    <string name="wrinkles_1_1_answer">None. No wrinkles even if I smile, frown, or raise my eyebrows</string>
+    <string name="wrinkles_1_2_answer">It only happens when I smile, frown, or raise my eyebrows</string>
+    <string name="wrinkles_1_3_answer">They are visible. There are some when I make facial expressions\nand there are some when I don\'t make facial expressions</string>
+    <string name="wrinkles_1_4_answer">Wrinkles are present even without showing any facial gesture</string>
+
+    <string name="wrinkles_question_2">On a daily basis, how long do you usually get exposed\nto sunlight?</string>
+    <string name="wrinkles_2_1_answer">Very short period (mostly indoors and not in places that get\na lot of sunlight)</string>
+    <string name="wrinkles_2_2_answer">Somewhat exposed (less sunny area but live in places\nwith regular sunlight)</string>
+    <string name="wrinkles_2_3_answer">Normal (living in places where there\'s a fair amount of daylight)</string>
+    <string name="wrinkles_2_4_answer">Highly exposed (tropical, southern, or very sunny places)</string>
+
+    <string name="wrinkles_question_3">How old do you look?</string>
+    <string name="wrinkles_3_1_answer">I look 1&#8211;5 years younger than my age</string>
+    <string name="wrinkles_3_2_answer">I look exactly my age</string>
+    <string name="wrinkles_3_3_answer">I look 1&#8211;5 years older than my age</string>
+    <string name="wrinkles_3_4_answer">I look 5 years older than my age</string>
+
+    <string name="wrinkles_question_4">How often do you eat fruits and vegetables?</string>
+    <string name="wrinkles_4_1_answer">At every meal</string>
+    <string name="wrinkles_4_2_answer">Once a day</string>
+    <string name="wrinkles_4_3_answer">Sometimes</string>
+    <string name="wrinkles_4_4_answer">I don\'t eat at all</string>
+
+    <string name="wrinkles_question_5">What is your natural skin complexion (without getting\ntreatment or tanned skin)?</string>
+    <string name="wrinkles_5_1_answer">Dark complexion</string>
+    <string name="wrinkles_5_2_answer">Medium toned complexion</string>
+    <string name="wrinkles_5_3_answer">Pale complexion</string>
+    <string name="wrinkles_5_4_answer">Very light complexion</string>
+
+    <!-- FailedToConnect Dialog -->
+    <string name="connect_failed_title">Failed to connect</string>
+    <string name="connect_failed_message">Please check the condition of the device</string>
+    <string name="connect_failed_button">Ok</string>
+
+    <!-- Reconnect Dialog -->
+    <string name="reconnect_title">The device is disconnected</string>
+    <string name="reconnect_message">Do you want to reconnect?</string>
+    <string name="reconnect_button">Reconnect</string>
+    <string name="reconnect_not">No</string>
+
+    <!-- ResultItem -->
+    <string name="result_view_image">View Image</string>
+    
+    <string name="result_value_u_zone">Moisture T zone</string>
+    <string name="result_value_t_zone">Moisture U zone</string>
+    <string name="result_value_spot">Spots/Pigmentation</string>
+</resources>

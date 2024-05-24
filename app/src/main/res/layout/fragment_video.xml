@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_background_color"
+        tools:context=".fragment.VideoFragment">
+
+        <Button
+            android:id="@+id/video_moisture_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="42dp"
+            android:backgroundTint="@color/button_mint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/video_spot_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/button_mint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_moisture_button" />
+
+        <Button
+            android:id="@+id/video_pores_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/button_mint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_spot_button" />
+
+        <Button
+            android:id="@+id/video_impurities_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/button_mint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_pores_button" />
+
+        <Button
+            android:id="@+id/video_wrinkle_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/button_mint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_impurities_button" />
+
+        <Button
+            android:id="@+id/video_keratin_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/button_mint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_wrinkle_button" />
+
+        <Button
+            android:id="@+id/video_sensitivity_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/button_mint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_keratin_button" />
+
+        <Button
+            android:id="@+id/video_sebum_button"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/button_mint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_sensitivity_button" />
+
+        <com.chowis.sdk.newcnd.CNDPlayer
+            android:background="@drawable/cnd_player_background"
+            android:id="@+id/video_zone_container"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="34dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/video_analyze_button"
+            android:layout_width="287dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/button_mint_color"
+            app:layout_constraintEnd_toEndOf="@+id/video_zone_container"
+            app:layout_constraintStart_toStartOf="@+id/video_zone_container"
+            app:layout_constraintTop_toBottomOf="@+id/video_zone_container" />
+
+        <Button
+            android:id="@+id/video_result_button"
+            android:layout_width="287dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/video_zone_container"
+            app:layout_constraintStart_toStartOf="@+id/video_zone_container"
+            app:layout_constraintTop_toBottomOf="@+id/video_analyze_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
